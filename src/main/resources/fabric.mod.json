@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "brb",
   "version": "${version}",
 
-  "name": "Example Mod",
+  "name": "Better Recipe Book",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
     "Me!"
@@ -18,12 +18,11 @@
 
   "environment": "*",
   "entrypoints": {
-    "main": [
-      "net.fabricmc.example.ExampleMod"
+    "client": [
+      "me.brandonzx3.brb.Brb"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
   ],
 
   "depends": {
@@ -33,5 +32,11 @@
   },
   "suggests": {
     "another-mod": "*"
+  },
+
+  "custom": {
+    "modmenu:api": false,
+    "modmenu:clientsideOnly": true,
+    "modmenu:parent": ""
   }
 }
